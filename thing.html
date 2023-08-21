@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<title>Zarek's Desktop</title>
+<!<img onclick="openWin()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Qy9hf-bIVJfdgxwzXT5GQFt9VwaZ_ELPkR8aJ0FlIGBN6bTreg5W3NLRKcuxk3s3R0A:https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0L2pvYjcyMS0wMzctdi5qcGc.jpg&usqp=CAU" alt="trol">
+<div id="h">Zarek's Web Desktop</div>
+<div id="bg"></div>
+<div id="d">Created by zarek</div>
+<button id="gg" onclick="myWindow=window.open('calc.html', 'calculator', 'width=230, height=290');">Open Calculator</button>
+
+<style>
+body {
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfpqoeVsCDoo81G2WOVirCvuoKgHk2Rm96CA:https://uploads-ssl.webflow.com/6053d0035c06201e6585a691/61b96b7b7f25ec065de54cd4_2020-07_Classic-Black_modified.jpg&usqp=CAU');
+}
+
+#h {
+   width: 100%;
+	height 10%;
+	background: gray;
+	text-align: center;
+	font-family: Helvetica, Sans-Serif;
+}
+
+#gg {
+   left: 20px;
+	top: 40px;
+	border-radius: 100px;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	transform-origin: center;
+}
+
+#gg:hover {
+   background: #b3b3b3;
+	transform-origin: center;
+	font-size: 15px;
+}
+
+#bg {
+   width: 100%;
+	height: 630px;
+   background: white;
+}
+
+#d {
+	width: 98.8%;
+	height: 2%;
+	left: 8px;
+	top: 645px;
+	text-align: center;
+	position: absolute;
+	background: #b3b3b3;
+	font-size: 11px;
+}
+</style>
+
+<script src="jquery-3.7.0.js"></script>
+
+<script>
+
+let myWindow;
+
+/*new Audio('file:///home/chronos/u-c0fe6a7cb0ff43b119ac3619e0064762e755eea3/MyFiles/virus/troll.mp3').play();*/
+/*$(document).click(function(e) { 
+    if (e.button == 0) {
+        openWin();
+    }
+});*/
+
+function sleep(ms) {
+  return new Promise(
+    resolve => setTimeout(resolve, ms)
+  );
+}
+
+window.hideWarning = false;
+window.addEventListener('beforeunload', (event) => {
+    if (!hideWarning) {
+        event.preventDefault();
+        event.returnValue = '';
+    }
+
+});
+
+async function openWin() {
+  myWindow=window.open("", "", "width=225, height=270");
+
+  while (1) {
+    var x = (Math.random() * 1366) + 1;
+	 var y = (Math.random() * 768) + 1;
+	 
+    myWindow.moveTo((Math.random() * 1366) + 1, (Math.random() * 768) + 1);
+	 
+	 await sleep(50);
+  }
+}
+</script>
+
+</body>
+</html>
